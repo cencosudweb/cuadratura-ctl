@@ -1,0 +1,10 @@
+El programa se esta ejecutando...
+[iFechaIni]05-12-2017
+[iFechaFin]06-12-2017
+[iFechaIni2]2017/12/05
+[iFechaFin2]2017/12/06
+[iFechaIni3]20171205
+[iFechaFin3]20171206
+[sb]select a.LOAD_NBR, a.WHSE, a.mod_date_time, (select count(*) from gdd_hdr g where a.load_nbr = g.load_nbr) cant_guias  from OUTBD_LOAD a, outpt_OUTBD_LOAD b where a.load_nbr=b.load_nbr  and a.stat_code in ('80','90') and a.mod_date_time BETWEEN           TO_DATE('05-12-2017 00:00:00', 'DD-MM-YYYY HH24:MI:SS') AND  TO_DATE('06-12-2017 23:59:59', 'DD-MM-YYYY HH24:MI:SS') 
+Archivos creados.
+El programa finalizo.
